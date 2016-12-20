@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Restaurant App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css">
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" class="home" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Restaurant Picker</h1>
+			<a href="taffaMenu.html" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+			<a href="#popupMenu2" data-rel="popup" class="ui-btn ui-icon-bars ui-btn-icon-right" data-inline="true1" data-transition="none" data-theme="e">More</a>
+			 <div data-role="popup" id="popupMenu2" data-theme="b">
+			    <ul data-role="listview" data-inset="true" style="min-width:100px;" data-theme="d">
+			        <li data-icon="false"><a href="taffaWeeklyMenu.html">Weekly menu</a></li>
+			        <li data-icon="false"><a href="taffaPriceList.html">Price list</a></li>
+			        <li data-icon="false"><a href="findus.html">Find us</a></li>
+			        <li data-icon="false"><a href="contact.html">Contact us</a></li>
+			    </ul>
+			</div>
+		<div role="main" class="ui-content banner">
+			<h2>Täffä - Price list</h2>
+			<img src="images2/banner.jpg" alt="" />
+			<!-- price list STARTS from here -->
+			<div class="box">
+				<div class="boxPart">
+	                <h3>Normal price: </h3><p>6.8€</p>
+	                <h3>University staff price: </h3><p>5.8€</p>
+	                <h3>Student price: </h3><p>2.6€</p>
+				</div>
+			</div>
+			<!-- price list ENDS here -->
+		</div>
+	</div>
+</body>
+</html>

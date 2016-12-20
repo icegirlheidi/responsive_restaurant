@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Restaurant App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css" >
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src='menu.js'></script>
+</head>
+<body>
+	<div data-role="page" data-theme="a">
+		<script type="text/javascript" src='menu.js'></script>
+		<div data-role="header" data-position="inline">
+			<h1>Restaurant Picker</h1>
+			<a href="index.html" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+			<a href="#popupMenu" data-rel="popup" class="ui-btn ui-icon-bars ui-btn-icon-right" data-inline="true" data-transition="none" data-theme="e">More</a>
+			 <div data-role="popup" id="popupMenu" data-theme="b">
+			    <ul data-role="listview" data-inset="true" style="min-width:100px;" data-theme="d">
+			        <li data-icon="false"><a href="taffaWeeklyMenu.html">Weekly menu</a></li>
+			        <li data-icon="false"><a href="taffaPriceList.html">Price list</a></li>
+			        <li data-icon="false"><a href="findus.html">Find us</a></li>
+			        <li data-icon="false"><a href="contact.html" data-transition="none">Contact us</a></li>
+			    </ul>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content">
+			<div class="choice_list">
+				<h2>Täffä today's menu</h2>
+				<h4>Lunch - Wednesday 4.3.2015 </h4>
+			</div>
+			<!-- menu list STARTS from here -->
+			<div class="menuImage clearfix">
+				<div class="foodImage">
+	                <a href="#popupSpaghetti" data-rel="popup" data-position-to="window" data-transition="fade"><img name="foodImage" alt="" src="images2/spaghetti.jpg"/></a>
+	                <div data-role="popup" id="popupSpaghetti" data-overlay-theme="a" data-theme="d" data-corners="false">
+    				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images2/spaghetti.jpg" style="max-height:512px;" alt="Spaghetti bolognese">
+					</div>
+	                <h4 id='meal0'></h4>
+	            </div>
+	            <div class="foodImage">
+	                <a href="#popupBasil" data-rel="popup" data-position-to="window" data-transition="fade"><img name="foodImage" alt="" src="images2/basil.jpg"/></a>
+	                <div data-role="popup" id="popupBasil" data-overlay-theme="a" data-theme="d" data-corners="false">
+    				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images2/Basil.jpg" style="max-height:512px;" alt="Basil sauce">
+					</div>
+	                <h4 id='meal1'></h4>
+	            </div>
+	            <div class="foodImage">
+	                <a href="#popupSalad" data-rel="popup" data-position-to="window" data-transition="fade"><img name="foodImage" alt="" src="images2/salad.jpeg"/></a>
+	                <div data-role="popup" id="popupSalad" data-overlay-theme="a" data-theme="d" data-corners="false">
+    				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images2/salad.jpeg" style="max-height:512px;" alt="Fresh salad with goast cheese">
+					</div>
+	                <h4 id='meal2'></h4>
+	            </div>
+	            <div class="foodImage">
+	                <a href="#popupCarrot" data-rel="popup" data-position-to="window" data-transition="fade"><img name="foodImage" alt="" src="images2/carrot_soup.jpg"/></a>
+	                <div data-role="popup" id="popupCarrot" data-overlay-theme="a" data-theme="d" data-corners="false">
+    				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images2/carrot_soup.jpeg" style="max-height:512px;" alt="Carrot soup">
+					</div>
+	                <h4 id='meal3'></h4>
+	            </div>
+	             <div class="foodImage">
+	                <a href="#popupSteak" data-rel="popup" data-position-to="window" data-transition="fade"><img name="foodImage" alt="" src="images2/grilledSteak2.jpg"/></a>
+	                <div data-role="popup" id="popupSteak" data-overlay-theme="a" data-theme="d" data-corners="false">
+    				<a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a><img class="popphoto" src="images2/grilledSteak2.jpg" style="max-height:512px;" alt="Grilled steak">
+					</div>
+	                <h4 id='meal4'></h4>
+	            </div>
+			</div>
+			<!-- menu list ENDS here -->
+			<!-- opening time, address and phone START from here -->
+			<div class="box">
+				<div class="boxPart">
+	                <h3>Openning time</h3>
+	                <p id='time'></p>
+				</div>
+				<div class="boxPart">
+                    <h3>Address</h3>
+	                <p id='address'></p>
+	                <p id='campus'></p>
+	        	</div>
+	             <div class="boxPart">
+                    <h3>Phone</h3>
+	                <p>040 5918961</p>
+	        	</div>
+			</div>
+			<!-- opening time, address and phone END from here -->
+		</div>
+	</div>
+</body>
+</html>

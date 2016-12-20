@@ -1,0 +1,152 @@
+body
+{
+	color: #5d5d5d;
+}
+.ui-content
+{
+	background: #ffffff;
+}
+.box
+{
+	background: #ffffff;
+	border-bottom: 1px solid #ccc;
+	padding: 2em 0;
+	margin: 0 0 1.5em 0;
+}
+.boxPart
+{
+	padding: 0px 0px 1.5em 0;
+}
+.boxPart p
+{
+	font-weight: 400;
+}
+.banner img
+{
+	width: 100%;
+	height: auto
+}
+h2
+{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: #252122;
+}
+h4
+{
+	font-size: 1.15em;
+	font-weight: 400;
+	color: #252122;
+}
+.weekday
+{
+	font-weight: 400;
+}
+.weekTitle h3
+{
+	margin-bottom: 2em;
+}
+.choice_list h4
+{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 1em;
+}
+#submit_button
+{
+	display: inline-block;
+	font-size: 1.1em;
+	padding: 0.65em 1.5em;
+	text-decoration: none;
+	border-radius: 5px;
+	border:0px none;
+	width: 100px;
+/*	color:#ffffff;
+	background: #D52349;*/
+}
+
+/*START google map in "Find us"*/
+#map_canvas
+{
+	width: 100%;
+	height: 500px;
+}
+/*END google map in "Find us"*/
+
+/*START  clearfix*/
+.clearfix:after 
+{ 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+.clearfix 
+{ 
+	display: inline-block; 
+}
+.clearfix { 
+	display: block; 
+	zoom: 1; 
+}
+/*END clearfix*/
+
+/*START css for different images*/
+.menuImage
+{
+	margin:0 auto;
+}
+.foodImage
+{
+	margin: 0 auto;
+	padding: 0px 0px 1.75em;
+}
+.foodImage img
+{
+	width: 100%;
+	margin: 0 auto;
+}
+.image
+{
+	display: inline-block;
+	margin: 0 auto;
+
+}
+.box img .foodImage img
+{
+	display: block;
+	width: 100%
+}
+/*END css for different images*/
+
+/*START css for 4 levels classment of restaurant*/
+.classement
+{
+	background: url(../images2/pagination.png) no-repeat 0 -182px;
+	height: 22px;
+	font-size: 0;
+}
+.one
+{
+	width: 30px;
+	background-position: -75px -182px;
+}
+.two
+{
+	width: 55px;
+	background-position: -52px -182px;
+}
+.three
+{
+	  width:75px;
+	  background-position: -27px -182px;
+}
+.four
+{
+	width: 99px;
+	background-position: -2px -182px;
+}
+/*END css for 4 levels classment of restaurant*/

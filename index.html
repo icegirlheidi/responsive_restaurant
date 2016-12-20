@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Restaurant App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css">
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script src="jquery.ui.map.full.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src='map.js'></script>
+	<script type="text/javascript" src='menu.js'></script>
+
+</head>
+<body>
+	<div data-role="page" class="home" data-theme="a">
+		<!-- START header -->
+		<div data-role="header" data-position="inline">
+			<h1>Restaurant Picker</h1>
+		</div>
+		<!-- END header -->
+		<div role="main" class="ui-content banner">
+				<img src="images2/banner.jpg" alt="" />
+				<div data-role="collapsible" data-inset="false" class="choice_list">
+		            <h2>Where to eat?</h2>
+		            <ul data-role="listview">
+		                <li><a href="#"><h3>Tuas building</h3><p class="classement three"></p> </a></li>
+		                <li><a href="#"><h3>Main building</h3><p class="classement two"></p> </a></li>
+		                <li><a href="taffaMenu.html" data-transition="slide"><h3>Täffä</h3><p class="classement four"></p> </a></li>
+		                <li><a href="#"><h3>Dipoli</h3><p class="classement three"></p> </a></li>
+		                 <li><a href="#"><h3>Cantina</h3><p class="classement four"></p> </a></li>
+		            </ul>
+        		</div><!-- /collapsible -->
+        		<div data-role="collapsible" data-inset="false" class="choice_list">
+		            <h2>What would you like to eat?</h2>
+		            <ul data-role="listview">
+		            	<li><a href="meat.html" data-transition="slide"><img src="images2/meatballs.jpg"/><h3>Meat</h3></a></li>
+		            	<li><a href="#" data-transition="slide"><img src="images2/vegetarian.jpeg"/><h3>Vegetarian</h3></a></li>
+		                <li><a href="soup.html" data-transition="slide"><img src="images2/soup.jpeg"/><h3>Soup</h3></a></li>
+		                <li><a href="salad.html" data-transition="slide"><img src="images2/coverSalad.jpeg"/><h3>Salad</h3></a></li>
+		                <li><a href="#" data-transition="slide"><img src="images2/grilledSteak.jpg"/><h3>À la carte</h3></a></li>
+		            </ul>
+        		</div><!-- /collapsible -->
+		</div>
+	</div>
+
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script src="jquery.ui.map.full.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src='map.js'></script>
+	<script type="text/javascript" src='menu.js'></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Restaurant App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css">
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" class="home" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Restaurant Picker</h1>
+			<a href="index.html" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+			<a href="#popupMenu5" data-rel="popup" class="ui-btn ui-icon-bars ui-btn-icon-right" data-inline="true" data-transition="none" data-theme="e">More</a>
+			 <div data-role="popup" id="popupMenu5" data-theme="b">
+			    <ul data-role="listview" data-inset="true" style="min-width:100px;" data-theme="d">
+			        <li data-icon="false"><a href="#">Vegetarian</a></li>
+			        <li data-icon="false"><a href="soup.html">Soup</a></li>
+			        <li data-icon="false"><a href="salad.html">Salad</a></li>
+			        <li data-icon="false"><a href="#">À la carte</a></li>
+			    </ul>
+			</div>
+		</div>
+
+		<div role="main" class="ui-content">
+			<div class="choice_list">
+				<h2>Today's meat in Otaniemi</h2>
+				<h4>Lunch - Wednesday 4.3.2015 </h4>
+				<ul data-role="listview" data-inset="true">
+					<li data-icon="false"><a href="#"><img src="images2/fish_and_chips.jpg"/><h3>Fish and chips</h3><p>Main building</p></a></li>
+					<li data-icon="false"><a href="#"><img src="images2/spaghetti2.jpg"/><h3>Spaghetti bolognese</h3><p>Täffä</p></a></li>
+					<li data-icon="false"><a href="#"><img src="images2/beef_stew.jpeg"/><h3>Beef stew</h3><p>Dipoli</p></a></li>
+					<li data-icon="false"><a href="#"><img src="images2/meatballs2.jpg"/><h3>Swedish meatballs</h3><p>Tuas</p></a></li>
+					<li data-icon="false"><a href="#"><img src="images2/chicken_nuggets.jpeg"/><h3>Chicken nuggets</h3><p>Cantina</p></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

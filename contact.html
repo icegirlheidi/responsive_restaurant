@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Restaurant App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/myCss.css">
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" class="home" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Restaurant Picker</h1>
+			<a href="taffaMenu.html" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-theme="a" data-transition="slide" data-direction="reverse">Back</a>
+			<a href="#popupMenu4" data-rel="popup" class="ui-btn ui-icon-bars ui-btn-icon-right" data-inline="true" data-transition="none" data-theme="a">More</a>
+			 <div data-role="popup" id="popupMenu4" data-theme="b">
+			    <ul data-role="listview" data-inset="true" style="min-width:100px;" data-theme="b">
+			        <li data-icon="false"><a href="taffaWeeklyMenu.html">Weekly menu</a></li>
+			        <li data-icon="false"><a href="taffaPriceList.html">Price list</a></li>
+			        <li data-icon="false"><a href="findus.html">Find us</a></li>
+			        <li data-icon="false"><a href="contact.html">Contact us</a></li>
+			    </ul>
+			</div>
+		</div>
+		<div role="main" class="ui-content banner">
+			<h2>Täffä - Contact us</h2>
+			<img src="images2/banner.jpg" alt="" />
+			<!--START contact us-->
+			<div class="box">
+				<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	                <div class="formRow">
+	                    <label for="name">Your name:</label>
+	                    <input id="name" class="input" name="name" type="text" value="" size="20" /><br>
+	                </div>
+	                <div class="formRow">
+	                    <label for="email">Your email:</label>
+	                    <input id="email" class="input" name="email" type="text" value="" size="20" /><br />
+	                </div>
+	                <div class="formRow">
+	                    <label for="message">Your message:</label>
+	                    <textarea id="message" class="input" name="message" rows="3" cols="20"></textarea><br />
+	                </div>
+	                <input id="submit_button" type="submit" value="Send message" data-theme="b"/>
+	            </form>	
+			</div>
+			<!-- END contact us-->
+		</div>
+	</div>
+</body>
+</html>
